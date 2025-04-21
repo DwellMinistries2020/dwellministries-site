@@ -2,6 +2,14 @@
 
 body {
 margin: 0;
+font-family: 'Segoe UI', 'Helvetica Neue', sans-serif;
+background-color: var(--navy); /* Navy Background */
+color: var(--text);
+line-height: 1.6;
+}
+
+body {
+margin: 0;
 padding: 0;
 font-family: 'Helvetica Neue', sans-serif;
 line-height: 1.6;
@@ -156,4 +164,39 @@ background-color: #4A4A48;
 margin-top: 1rem;
 font-size: 0.9rem;
 color: #4A4A48;
+}
+
+/* === Custom Section Background Colors === */
+.hero {
+background-color: #D8C3A5; /* Warm Beige */
+}
+
+.about-section {
+background-color: #ffffff;
+}
+
+.worship-section {
+background-color: #909D7D; /* Sage */
+}
+
+.contact-section {
+background-color: #2B2E4A; /* Deep Indigo */
+color: #ffffff;
+}
+
+/* === Fancy Headers with Shadow === */
+h1, h2, h3 {
+font-family: 'Segoe UI', 'Helvetica Neue', sans-serif;
+font-weight: 800;
+text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.hero h1, .hero h2 {
+font-size: 3rem;
+}
+
+.about-section h3,
+.worship-section h3,
+.contact-section h3 {
+font-size: 2rem;
 }
