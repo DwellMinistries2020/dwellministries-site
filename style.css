@@ -1,188 +1,218 @@
-/* === Global Styles for Dwell Ministries === */
+/* === Brand Colors === */
+:root {
+--terracotta: #E2725B;
+--sage: #909D7D;
+--tan: #F4EDE4;
+--black: #1F1F1F;
+--white: #FFFFFF;
+--sky-blue: #72C4D5;
 
+--text-dark: #1F1F1F;
+--text-light: #FFFFFF;
+--accent: var(--terracotta);
+}
+
+/* === Global Styles === */
 body {
 margin: 0;
-font-family: 'Poppins', 'Segoe UI', 'Helvetica Neue', sans-serif;
-background-color: #ffffff;
-color: #2B2E4A; /* Deep Indigo */
-line-height: 1.7;
+font-family: 'Segoe UI', 'Helvetica Neue', sans-serif;
+background-color: var(--tan);
+color: var(--text-dark);
+line-height: 1.6;
 }
 
-/* === Header & Hero Section === */
-.hero {
-background-color: #D8C3A5; /* Warm Beige */
-padding: 4rem 2rem;
-text-align: center;
-}
-
-.hero h1 {
-font-size: 3rem;
-font-weight: 800;
-color: #E4B169; /* Soft Gold */
-text-shadow: 1px 1px 3px rgba(0,0,0,0.15);
-}
-
-.hero h2 {
-font-size: 1.5rem;
-color: #2B2E4A;
-margin-bottom: 2rem;
-}
-
-/* === Navigation (if added later) === */
+/* === Navigation Bar === */
 .navbar {
 display: flex;
 justify-content: space-between;
 align-items: center;
-background-color: #2B2E4A;
+background-color: var(--black);
 padding: 1rem 2rem;
-position: fixed;
+position: sticky;
 top: 0;
-width: 100%;
 z-index: 1000;
 }
 
-.navbar .logo {
-font-weight: bold;
-font-size: 1.5rem;
-color: #E4B169;
+.logo-img {
+height: 50px;
 }
 
 .nav-links {
 list-style: none;
 display: flex;
-gap: 1rem;
-margin: 0;
-padding: 0;
+gap: 1.5rem;
 }
 
-.nav-links a {
-color: #ffffff;
+.nav-links li a {
+color: var(--white);
 text-decoration: none;
-font-weight: 500;
-}
-
-.nav-links a:hover {
-color: #E4B169;
-}
-
-/* === Section Background Colors === */
-.about-section {
-background-color: #ffffff;
-padding: 3rem 2rem;
-text-align: center;
-}
-
-.worship-section {
-background-color: #909D7D; /* Sage */
-padding: 3rem 2rem;
-text-align: center;
-}
-
-.contact-section {
-background-color: #2B2E4A; /* Deep Indigo */
-color: #ffffff;
-padding: 3rem 2rem;
-text-align: center;
-}
-
-/* === Typography === */
-h1, h2, h3 {
-font-family: 'Poppins', 'Segoe UI', sans-serif;
-font-weight: 800;
-text-shadow: 1px 1px 3px rgba(0,0,0,0.1);
-margin-bottom: 1rem;
-letter-spacing: 0.5px;
-}
-
-h2 {
-font-size: 2.5rem;
-}
-
-h3 {
-font-size: 2rem;
-color: #E4B169;
-}
-
-p {
-font-size: 1.2rem;
-color: #4A4A48; /* Charcoal */
-}
-
-/* === Buttons === */
-.btn {
-background-color: #2B2E4A;
-color: #ffffff;
 font-weight: 600;
-padding: 0.75rem 2rem;
-border-radius: 6px;
-border: none;
-box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-transition: all 0.3s ease-in-out;
-text-transform: uppercase;
-cursor: pointer;
 font-size: 1rem;
 }
 
-.btn:hover {
-background-color: #E4B169;
-color: #2B2E4A;
-transform: scale(1.05);
+.nav-links li a:hover {
+color: var(--sky-blue);
 }
 
-/* === Worship Times Layout === */
+/* === Hero Section === */
+.hero {
+background-color: var(--tan);
+text-align: center;
+padding: 4rem 2rem;
+}
+
+.hero h1 {
+font-size: 2rem;
+color: var(--black);
+}
+
+.hero h2 {
+font-size: 3rem;
+color: var(--terracotta);
+font-weight: 800;
+text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.hero p {
+font-size: 1.1rem;
+margin: 0.5rem 0 1rem;
+}
+
+.btn {
+background-color: var(--black);
+color: var(--white);
+border: none;
+padding: 0.7rem 1.5rem;
+font-size: 1rem;
+border-radius: 4px;
+text-decoration: none;
+display: inline-block;
+margin-top: 1rem;
+}
+
+.btn:hover {
+background-color: var(--accent);
+}
+
+/* === Sections === */
+.about-section,
+.worship-section,
+.events-section,
+.feedback-section,
+.contact-section {
+padding: 4rem 2rem;
+text-align: center;
+}
+
+.about-section {
+background-color: var(--white);
+}
+
+.worship-section {
+background-color: var(--sage);
+color: var(--white);
+}
+
+.events-section {
+background-color: var(--white);
+}
+
+.feedback-section {
+background-color: var(--sky-blue);
+color: var(--black);
+}
+
+.contact-section {
+background-color: var(--terracotta);
+color: var(--white);
+}
+
+/* === Section Headings === */
+section h3 {
+font-size: 2rem;
+font-weight: 800;
+margin-bottom: 1rem;
+text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+section p, section li {
+font-size: 1rem;
+max-width: 700px;
+margin: 0 auto 1rem;
+}
+
+/* === Worship Blocks === */
 .worship-times {
 display: flex;
 flex-direction: column;
 gap: 2rem;
-max-width: 800px;
-margin: 2rem auto;
+margin-top: 2rem;
 }
 
 .service-block {
-background-color: #f4f4f4;
-padding: 2rem;
+background-color: var(--white);
+color: var(--black);
 border-radius: 10px;
+padding: 1.5rem;
+max-width: 600px;
+margin: 0 auto;
 }
 
-/* === Contact Form Styling === */
-.contact-section h3 {
-color: #E4B169;
+.service-block h4 {
+margin-top: 0;
+font-size: 1.3rem;
+font-weight: bold;
 }
 
-.contact-section form {
+/* === Forms === */
+form {
 display: flex;
 flex-direction: column;
+align-items: center;
 gap: 1rem;
 max-width: 500px;
-margin: 2rem auto;
+margin: 2rem auto 0;
 }
 
-.contact-section input,
-.contact-section textarea {
-padding: 1rem;
+form input,
+form textarea {
+width: 100%;
+padding: 0.75rem;
+font-size: 1rem;
+border-radius: 6px;
 border: 1px solid #ccc;
-border-radius: 6px;
-font-size: 1rem;
-font-family: 'Poppins', sans-serif;
 }
 
-.contact-section button {
-background-color: #E4B169;
-color: #2B2E4A;
-border: none;
-padding: 1rem;
-border-radius: 6px;
-font-weight: bold;
+form button {
+background-color: var(--black);
+color: var(--white);
+padding: 0.7rem 1.5rem;
 font-size: 1rem;
+border: none;
+border-radius: 4px;
 cursor: pointer;
 }
 
-.contact-section button:hover {
-background-color: #D8C3A5;
+form button:hover {
+background-color: var(--accent);
 }
 
 .form-note {
-margin-top: 1rem;
 font-size: 0.9rem;
-color: #ffffff;
+margin-top: 0.5rem;
 }
+
+/* === Footer === */
+footer.footer {
+background-color: var(--black);
+color: var(--white);
+text-align: center;
+padding: 2rem;
+font-size: 0.9rem;
+}
+
+footer a {
+color: var(--sky-blue);
+text-decoration: none;
+}
+
