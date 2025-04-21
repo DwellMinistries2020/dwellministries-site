@@ -200,3 +200,55 @@ font-size: 3rem;
 .contact-section h3 {
 font-size: 2rem;
 }
+
+/* === Modern, Bold Font Enhancements === */
+body {
+font-family: 'Segoe UI', 'Poppins', 'Helvetica Neue', sans-serif;
+color: #2B2E4A;
+}
+
+h1, h2, h3 {
+font-family: 'Poppins', 'Segoe UI', sans-serif;
+font-weight: 800;
+color: #2B2E4A;
+letter-spacing: 0.5px;
+text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.15);
+margin-bottom: 1rem;
+}
+
+h1 {
+font-size: 3rem;
+}
+
+h2 {
+font-size: 2.5rem;
+}
+
+h3 {
+font-size: 2rem;
+}
+
+p {
+font-size: 1.2rem;
+line-height: 1.7;
+}
+
+
+
+.btn {
+background-color: #2B2E4A;
+color: #ffffff;
+font-weight: 600;
+padding: 0.75rem 2rem;
+border-radius: 6px;
+border: none;
+box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+transition: all 0.3s ease-in-out;
+text-transform: uppercase;
+}
+
+.btn:hover {
+background-color: #E4B169;
+color: #2B2E4A;
+transform: scale(1.05);
+}
