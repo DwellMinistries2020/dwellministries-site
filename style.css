@@ -3,8 +3,7 @@ body {
 font-family: 'Montserrat', sans-serif;
 margin: 0;
 padding: 0;
-background: #f9f4ee;
-color: #333;
+background-color: #fef9f4;
 }
 
 h1, h2, h3 {
@@ -13,141 +12,149 @@ text-align: center;
 }
 
 a {
-color: white;
 text-decoration: none;
+color: white;
 }
 
-img {
-max-width: 100%;
-height: auto;
+ul {
+list-style: none;
+padding: 0;
 }
 
 /* HEADER */
 .main-header {
-background: #e07b57;
-padding: 10px 0;
+background-color: #E2725B;
 text-align: center;
+padding: 10px;
 }
 
 .logo {
-height: 80px;
+max-width: 160px;
+height: auto;
 }
 
-.nav-vertical {
-background: #000;
-display: flex;
-justify-content: center;
-gap: 20px;
+.nav-rectangle {
+background-color: #000;
 padding: 10px 0;
 }
 
-.nav-vertical ul {
-list-style: none;
+.nav-rectangle ul {
 display: flex;
-gap: 20px;
-padding: 0;
+justify-content: center;
+gap: 30px;
 }
 
-.nav-vertical li a {
+.nav-rectangle li a {
 color: white;
 font-weight: bold;
-padding: 10px;
 }
 
 /* HERO */
 .hero {
 text-align: center;
-padding: 40px 20px;
+padding: 50px 20px;
 }
 
-.join-btn {
+.hero h1 {
+font-size: 36px;
+}
+
+.button {
 background-color: #000;
-color: white;
+color: #fff;
 padding: 10px 20px;
 display: inline-block;
-text-decoration: none;
-font-weight: bold;
 margin-top: 10px;
 }
 
 /* EVENTS */
-.events {
-background-color: #909D7D;
+.events-section {
+background-color: #A9BA9D;
 padding: 40px 20px;
 }
 
 .section-title {
 text-align: center;
 font-size: 28px;
-margin-bottom: 30px;
 }
 
 .event-grid {
 display: flex;
-flex-wrap: wrap;
 justify-content: center;
-gap: 20px;
+gap: 30px;
+flex-wrap: wrap;
+margin-top: 20px;
 }
 
 .event-card {
-background: white;
-padding: 15px;
-border-radius: 8px;
+background: #fff;
+padding: 20px;
+width: 280px;
 text-align: center;
-max-width: 250px;
 }
 
 .event-card img {
-border-radius: 8px;
+width: 100%;
+height: auto;
 }
 
 /* ABOUT SECTION */
 .about-section {
-background: #000;
-color: white;
-padding: 40px 20px;
-text-align: left;
+background-color: #1c1c1c;
+color: #fff;
+padding: 60px 20px;
 }
 
 .about-text {
-background: #e07b57;
-padding: 30px;
-border-radius: 8px;
-max-width: 900px;
+max-width: 700px;
 margin: auto;
-font-size: 16px;
 }
 
-/* PASTOR SECTION */
-.pastor-section {
-padding: 40px 20px;
+.about-text h2 {
+color: #E2725B;
+}
+
+/* ABOUT PASTOR */
+.about-pastor-section {
+background-color: #1c1c1c;
 text-align: center;
+padding: 50px 20px;
+color: white;
 }
 
-.pastor-photo {
+.pastor-card {
+background-color: #E2725B;
+display: inline-block;
+padding: 20px;
+}
+
+.pastor-card img {
 width: 250px;
-border-radius: 8px;
+height: auto;
+}
+
+.pastor-card h3 {
 margin-top: 15px;
 }
 
-/* TESTIMONY + CONTACT */
-.dual-section {
+/* TESTIMONY & PRAYER */
+.testimony-section {
 display: flex;
 flex-wrap: wrap;
 }
 
-.feedback, .contact {
-flex: 1;
+.split-left,
+.split-right {
+width: 50%;
 padding: 30px;
-min-width: 300px;
 }
 
-.feedback {
-background: #f9f4ee;
+.split-left {
+background-color: #fef9f4;
 }
 
-.contact {
-background: #e07b57;
+.split-right {
+background-color: #E2725B;
 color: white;
 }
 
@@ -157,51 +164,50 @@ flex-direction: column;
 gap: 10px;
 }
 
-input, textarea {
+form input,
+form textarea {
 padding: 10px;
-border: none;
-border-radius: 4px;
+font-size: 14px;
+width: 100%;
 }
 
-button {
-background: #000;
+form button {
+background-color: #000;
 color: white;
 padding: 10px;
-border: none;
-cursor: pointer;
-}
-
-/* FOOTER */
-.footer {
-text-align: center;
-padding: 20px;
-background: #000;
-color: white;
-}
-
-.footer a {
-color: #e07b57;
 font-weight: bold;
 }
 
-/* MOBILE RESPONSIVE */
-@media (max-width: 768px) {
-.nav-vertical ul {
-flex-direction: column;
-align-items: center;
+/* FOOTER */
+footer {
+background-color: #1c1c1c;
+text-align: center;
+padding: 20px;
+color: white;
 }
 
+footer a {
+color: #E4B169;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
 .event-grid {
 flex-direction: column;
 align-items: center;
 }
 
-.dual-section {
+.split-left,
+.split-right {
+width: 100%;
+}
+
+.nav-rectangle ul {
 flex-direction: column;
+gap: 10px;
 }
 
 .logo {
-height: 60px;
+max-width: 120px;
 }
 }
-
