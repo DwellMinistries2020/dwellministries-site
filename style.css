@@ -1,201 +1,223 @@
-/* Dwell Ministries Global Styles */
-
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700;800&display=swap');
-
-:root {
---black: #000000;
---white: #ffffff;
---tan: #f5f1e6;
---sage: #909D7D;
---terracotta: #D46A4C;
---sky-blue: #81C3D7;
---shadow: rgba(0, 0, 0, 0.2);
-}
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap');
 
 body {
 margin: 0;
 font-family: 'Montserrat', sans-serif;
-background-color: var(--white);
-color: var(--black);
-line-height: 1.6;
+background-color: #fdf6ee;
+color: #333;
 }
 
-/* Header */
-.nav-header {
+/* HEADER */
+.main-header {
 display: flex;
-justify-content: space-between;
+flex-direction: column;
 align-items: center;
-padding: 1rem 2rem;
-background-color: var(--tan);
-position: sticky;
-top: 0;
-z-index: 999;
-box-shadow: 0 2px 4px var(--shadow);
+background-color: #fff;
+padding: 1rem;
+}
+
+.logo-container {
+max-width: 220px;
+margin-bottom: 1rem;
 }
 
 .logo {
-height: 50px;
+width: 100%;
+height: auto;
 }
 
-.nav-links {
+.main-nav ul {
 list-style: none;
-display: flex;
-gap: 1.5rem;
-margin: 0;
 padding: 0;
-}
-
-.nav-links a {
-text-decoration: none;
-font-weight: 600;
-color: var(--black);
-font-size: 1rem;
-transition: color 0.3s ease;
-}
-
-.nav-links a:hover {
-color: var(--terracotta);
-}
-
-/* Hero Section */
-.hero {
-background-color: var(--tan);
+background-color: #000;
+margin: 0;
 text-align: center;
-padding: 4rem 2rem;
-animation: slideIn 1s ease-out;
+}
+
+.main-nav ul li {
+padding: 10px 0;
+}
+
+.main-nav ul li a {
+text-decoration: none;
+color: #fff;
+display: block;
+font-weight: bold;
+}
+
+/* HERO SECTION */
+.hero {
+text-align: center;
+background: #fdf6ee;
+padding: 4rem 1rem 3rem;
+animation: fadeInUp 1s ease;
 }
 
 .hero h1 {
 font-size: 2.5rem;
-font-weight: 800;
+color: #d95f3b;
+margin: 0.5rem 0;
 }
 
 .hero h2 {
 font-size: 1.5rem;
-margin: 1rem 0;
-color: var(--terracotta);
+margin-bottom: 0.3rem;
 }
 
-.hero a {
-background-color: var(--black);
-color: var(--white);
-padding: 0.75rem 1.5rem;
-border: none;
-border-radius: 5px;
+.hero .btn {
+display: inline-block;
+margin-top: 1rem;
+background-color: #000;
+color: #fff;
+padding: 12px 25px;
 text-decoration: none;
-font-weight: 600;
-transition: background-color 0.3s ease;
+border-radius: 4px;
 }
 
-.hero a:hover {
-background-color: var(--sage);
+/* EVENTS SECTION */
+.events-section {
+background-color: #909D7D;
+padding: 2rem 1rem;
+color: #fff;
 }
 
-/* Sections */
-section {
-padding: 4rem 2rem;
+.events-grid {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+gap: 1.5rem;
+margin-top: 1rem;
+}
+
+.event {
+background-color: #fff;
+color: #333;
+padding: 1rem;
+border-radius: 8px;
 text-align: center;
+animation: fadeIn 1.2s ease;
 }
 
-section h3 {
-font-size: 2rem;
-margin-bottom: 2rem;
-color: var(--terracotta);
-}
-
-/* About Section */
-.about-section {
-background-color: var(--white);
-animation: slideIn 1.2s ease-out;
-}
-
-/* Worship Section */
-.worship-section {
-background-color: var(--sage);
-color: var(--white);
-animation: slideIn 1.4s ease-out;
-}
-
-.service-block {
-background-color: var(--white);
-color: var(--black);
-padding: 1.5rem;
-border-radius: 10px;
-margin: 1rem auto;
-max-width: 500px;
-box-shadow: 0 4px 8px var(--shadow);
-}
-
-/* Submission Section */
-.submission-section {
-background-color: var(--sky-blue);
-animation: slideIn 1.6s ease-out;
-}
-
-/* Contact Section */
-.contact-section {
-background-color: var(--terracotta);
-color: var(--white);
-animation: slideIn 1.8s ease-out;
-}
-
-.contact-section input,
-.contact-section textarea {
-width: 90%;
-max-width: 500px;
-margin: 0.5rem auto;
-padding: 0.75rem;
-font-size: 1rem;
-border: 1px solid #ccc;
-border-radius: 6px;
-display: block;
-}
-
-.contact-section button {
-background-color: var(--black);
-color: var(--white);
-padding: 0.75rem 1.5rem;
-font-size: 1rem;
-font-weight: bold;
-border: none;
-border-radius: 5px;
-margin-top: 1rem;
-cursor: pointer;
-transition: background-color 0.3s ease;
-}
-
-.contact-section button:hover {
-background-color: var(--white);
-color: var(--black);
-}
-
-.form-note {
-font-size: 0.9rem;
-margin-top: 1rem;
-}
-
-/* Images in Sections */
-section img {
-max-width: 100%;
+.event img {
+width: 100%;
 height: auto;
-margin: 1rem 0;
 border-radius: 8px;
 }
 
-/* Footer */
-footer {
-background-color: var(--black);
-color: var(--white);
-text-align: center;
+.event .btn {
+background-color: #000;
+color: #fff;
+text-decoration: none;
+padding: 8px 16px;
+margin-top: 0.5rem;
+display: inline-block;
+border-radius: 4px;
+}
+
+/* ABOUT SECTION */
+.about-grid {
+display: flex;
+flex-wrap: wrap;
+padding: 3rem 1rem;
+gap: 2rem;
+align-items: center;
+justify-content: center;
+}
+
+.about-content {
+flex: 1;
+max-width: 600px;
+}
+
+.about-content h2 {
+color: #2c2c2c;
+font-size: 2rem;
+margin-bottom: 1rem;
+}
+
+.pastor-img {
+flex: 1;
+max-width: 400px;
+}
+
+.pastor-img img {
+width: 100%;
+border-radius: 10px;
+}
+
+/* TESTIMONY & PRAYER */
+.combined-contact {
+display: flex;
+flex-wrap: wrap;
+margin: 0;
+}
+
+.left-form,
+.right-form {
+flex: 1;
 padding: 2rem;
+min-width: 300px;
+}
+
+.left-form {
+background-color: #fdf6ee;
+}
+
+.right-form {
+background-color: #d95f3b;
+color: #fff;
+}
+
+.left-form img,
+.right-form img {
+width: 80%;
+max-width: 300px;
+margin-bottom: 1rem;
+display: block;
+}
+
+.left-form form,
+.right-form form {
+display: flex;
+flex-direction: column;
+}
+
+input,
+textarea {
+padding: 10px;
+margin: 10px 0;
+font-family: inherit;
+border: 1px solid #ccc;
+border-radius: 5px;
+}
+
+button {
+background-color: #000;
+color: white;
+padding: 10px;
+border: none;
+cursor: pointer;
+}
+
+/* FOOTER */
+footer {
+text-align: center;
+background: #fff;
+padding: 2rem 1rem;
 font-size: 0.9rem;
 }
 
-/* Animations */
-@keyframes slideIn {
+footer a {
+color: #d95f3b;
+text-decoration: none;
+font-weight: bold;
+}
+
+/* ANIMATIONS */
+@keyframes fadeInUp {
 from {
 opacity: 0;
-transform: translateY(40px);
+transform: translateY(30px);
 }
 to {
 opacity: 1;
@@ -203,12 +225,28 @@ transform: translateY(0);
 }
 }
 
-/* Mobile */
-@media (max-width: 768px) {
-.nav-links {
+@keyframes fadeIn {
+from {
+opacity: 0;
+}
+to {
+opacity: 1;
+}
+}
+
+/* RESPONSIVE */
+@media screen and (max-width: 768px) {
+.about-grid {
 flex-direction: column;
-align-items: center;
-gap: 0.5rem;
+padding: 2rem 1rem;
+}
+
+.events-grid {
+grid-template-columns: 1fr;
+}
+
+.logo-container {
+max-width: 150px;
 }
 
 .hero h1 {
@@ -217,14 +255,5 @@ font-size: 2rem;
 
 .hero h2 {
 font-size: 1.2rem;
-}
-
-section h3 {
-font-size: 1.5rem;
-}
-
-.contact-section input,
-.contact-section textarea {
-font-size: 1rem;
 }
 }
