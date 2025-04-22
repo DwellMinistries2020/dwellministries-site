@@ -218,3 +218,18 @@ gap: 10px;
 max-width: 140px;
 }
 }
+input[type="file"] {
+  padding: 10px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  font-size: 1rem;
+}
+
+label[for="fileUpload"] {
+  display: block;
+  margin: 10px 0 5px;
+  font-weight: bold;
+}
+
