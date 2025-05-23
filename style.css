@@ -1,15 +1,14 @@
 /* GENERAL */
 body {
-font-family: 'Helvetica Neue', Arial, sans-serif;
+font-family: 'Montserrat', sans-serif;
 margin: 0;
 padding: 0;
-background: #fdf9f4;
-color: #333;
+background-color: #fef9f4;
 }
 
 h1, h2, h3 {
-font-weight: bold;
-margin: 0.5em 0;
+font-family: 'Montserrat', sans-serif;
+text-align: center;
 }
 
 a {
@@ -17,198 +16,205 @@ text-decoration: none;
 color: white;
 }
 
+ul {
+list-style: none;
+padding: 0;
+}
+
 /* HEADER */
 .main-header {
-display: flex;
-align-items: flex-start;
-background: #000;
-padding: 1rem;
-position: sticky;
-top: 0;
-z-index: 999;
+background-color: #E2725B;
+text-align: center;
+padding: 10px 0;
 }
 
 .logo {
-height: 80px;
-margin-right: 1rem;
+max-width: 200px;
+height: auto;
 }
 
-.nav-vertical ul {
-list-style: none;
-padding: 0;
-margin: 0;
-}
-
-.nav-vertical li {
+.nav-rectangle {
 background-color: #000;
-color: white;
-padding: 0.5rem 1rem;
-text-align: center;
-margin-bottom: 0.3rem;
+padding: 15px 0;
 }
 
-.nav-vertical a {
+.nav-rectangle ul {
+display: flex;
+justify-content: center;
+gap: 40px;
+flex-wrap: wrap;
+}
+
+.nav-rectangle li a {
 color: white;
-font-weight: 600;
+font-weight: bold;
+font-size: 16px;
 }
 
 /* HERO */
 .hero {
 text-align: center;
-padding: 3rem 1rem;
-background: #f5ebdd;
+padding: 50px 20px;
 }
 
-.join-btn {
-background: black;
-color: white;
-padding: 0.75rem 1.5rem;
-font-weight: bold;
+.hero h1 {
+font-size: 36px;
+}
+
+.button {
+background-color: #000;
+color: #fff;
+padding: 10px 20px;
 display: inline-block;
-margin-top: 1rem;
+margin-top: 10px;
 }
 
 /* EVENTS */
-.events-grid {
-background: #909D7D;
-padding: 2rem 1rem;
-display: grid;
-grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-gap: 1.5rem;
+.events-section {
+background-color: #A9BA9D;
+padding: 40px 20px;
+}
+
+.section-title {
 text-align: center;
+font-size: 28px;
+}
+
+.event-grid {
+display: flex;
+justify-content: center;
+gap: 30px;
+flex-wrap: wrap;
+margin-top: 20px;
 }
 
 .event-card {
-background: white;
-border-radius: 8px;
-padding: 1rem;
+background: #fff;
+padding: 20px;
+width: 280px;
+text-align: center;
 }
 
 .event-card img {
 width: 100%;
-border-radius: 8px;
-}
-
-.event-btn {
-background: #000;
-color: #fff;
-padding: 0.5rem;
-display: inline-block;
-margin-top: 0.5rem;
+height: auto;
 }
 
 /* ABOUT SECTION */
 .about-section {
-display: flex;
-flex-wrap: wrap;
-background: #2B2E4A;
-color: white;
+background-color: #1c1c1c;
+color: #fff;
+padding: 60px 20px;
 }
 
 .about-text {
-flex: 1;
-padding: 2rem;
+max-width: 700px;
+margin: auto;
 }
 
 .about-text h2 {
-color: #E4B169;
+color: #E2725B;
 }
 
-.about-block {
-background: #E2725B;
-padding: 1.5rem;
-border-radius: 8px;
+/* ABOUT PASTOR */
+.about-pastor-section {
+background-color: #1c1c1c;
+text-align: center;
+padding: 50px 20px;
 color: white;
 }
 
-.about-pastor {
-flex: 1;
-padding: 2rem;
-text-align: center;
+.pastor-card {
+background-color: #E2725B;
+display: inline-block;
+padding: 20px;
 }
 
-.about-pastor img {
-width: 80%;
-max-width: 300px;
-border-radius: 12px;
+.pastor-card img {
+width: 250px;
+height: auto;
 }
 
-/* TESTIMONY & PRAYER */
-.submission-section {
+.pastor-card h3 {
+margin-top: 15px;
+color: #fff;
+}
+
+/* TESTIMONY + PRAYER SIDE BY SIDE */
+.testimony-section {
 display: flex;
 flex-wrap: wrap;
 }
 
-.feedback, .prayer {
-flex: 1;
-padding: 2rem;
+.feedback-box,
+.prayer-box {
+width: 50%;
+padding: 30px;
+box-sizing: border-box;
 }
 
-.feedback {
-background: #f5ebdd;
+.feedback-box {
+background-color: #fef9f4;
+text-align: left;
 }
 
-.prayer {
-background: #E2725B;
+.prayer-box {
+background-color: #E2725B;
 color: white;
+text-align: right;
 }
 
-.feedback img, .prayer img {
-max-width: 100%;
-height: auto;
-border-radius: 12px;
-margin-bottom: 1rem;
+form {
+display: flex;
+flex-direction: column;
+gap: 10px;
 }
 
-form input, form textarea {
+form input,
+form textarea {
+padding: 10px;
+font-size: 14px;
 width: 100%;
-padding: 0.75rem;
-margin-bottom: 1rem;
-border: none;
-border-radius: 4px;
 }
 
 form button {
-padding: 0.75rem;
-background: black;
+background-color: #000;
 color: white;
+padding: 10px;
 font-weight: bold;
-border: none;
-border-radius: 4px;
 }
 
 /* FOOTER */
-.site-footer {
+footer {
+background-color: #1c1c1c;
 text-align: center;
-background: #000;
+padding: 20px;
 color: white;
-padding: 1.5rem 1rem;
 }
 
-.site-footer a {
+footer a {
 color: #E4B169;
 }
 
 /* RESPONSIVE */
 @media (max-width: 768px) {
-.about-section {
-flex-direction: column;
-}
-
-.submission-section {
-flex-direction: column;
-}
-
-.main-header {
+.event-grid {
 flex-direction: column;
 align-items: center;
 }
 
-.nav-vertical li {
-margin-bottom: 0.5rem;
+.feedback-box,
+.prayer-box {
+width: 100%;
+text-align: center;
+}
+
+.nav-rectangle ul {
+flex-direction: column;
+gap: 10px;
 }
 
 .logo {
-height: 60px;
+max-width: 140px;
 }
 }
